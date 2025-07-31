@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #000000;
+    min-height: 100vh;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 30px 0;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    margin: 10px 0;
+    box-shadow: none;
+}
+
+.band-logo {
+    max-width: 120%;
+    height: auto;
+    max-height: 300px;
+}
+
+/* Main Content */
+.main-content {
+    padding: 10px 0;
+}
+
+/* Download Section */
+.download-section {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.download-demo-btn {
+    background: #000000;
+    color: #eaff00;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 0;
+    text-decoration: underline;
+    text-decoration-color: #eaff00;
+    margin-right: 20px;
+}
+
+.play-all-btn {
+    background: #000000;
+    color: #eaff00;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 0;
+    text-decoration: underline;
+    text-decoration-color: #eaff00;
+}
+
+
+
+.download-demo-btn i {
+    margin-right: 10px;
+}
+
+.music-section {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 30px;
+    box-shadow: none;
+    margin-bottom: 40px;
+}
+
+.music-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #eaff00;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 900;
+}
+
+/* Music Player */
+.music-player {
+    background: #000000;
+    border: 2px solid #eaff00;
+    border-radius: 0;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.player-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.now-playing {
+    text-align: center;
+    padding: 15px;
+    background: #111111;
+    border: 1px solid #eaff00;
+    border-radius: 0;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.2);
+}
+
+.track-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.track-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.track-artist {
+    font-size: 0.9rem;
+    color: #eaff00;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+}
+
+.control-btn {
+    background: #000000;
+    color: #eaff00;
+    border: 2px solid #eaff00;
+    border-radius: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 1rem;
+}
+
+
+
+.control-btn:active {
+    transform: scale(0.95);
+}
+
+.progress-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 4px;
+    background: #333333;
+    border-radius: 0;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid #eaff00;
+}
+
+.progress-fill {
+    height: 100%;
+    background: #eaff00;
+    width: 0%;
+    transition: width 0.1s ease;
+}
+
+.time-display {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* Playlist */
+.playlist h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #eaff00;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 900;
+}
+
+.song-list {
+    display: grid;
+    gap: 15px;
+}
+
+.song-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background: #000000;
+    border: 1px solid #eaff00;
+    border-radius: 0;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+
+
+.song-item.active {
+    border-color: #eaff00;
+    background: #111111;
+}
+
+.song-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.song-title {
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.song-duration {
+    color: #eaff00;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.song-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.action-btn {
+    background: none;
+    border: 1px solid #eaff00;
+    color: #eaff00;
+    cursor: pointer;
+    padding: 6px 10px;
+    border-radius: 0;
+    transition: all 0.2s ease;
+    font-size: 0.9rem;
+}
+
+
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 30px 0;
+    color: #ffffff;
+    font-size: 0.9rem;
+    border-top: 1px solid #eaff00;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .band-name {
+        font-size: 2.5rem;
+    }
+    
+    .music-section {
+        padding: 20px;
+    }
+    
+    .controls {
+        gap: 10px;
+    }
+    
+    .control-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 1rem;
+    }
+    
+    .song-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .song-actions {
+        align-self: flex-end;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .hero {
+        padding: 60px 0;
+    }
+    
+    .band-name {
+        font-size: 2rem;
+    }
+    
+    .music-section h2 {
+        font-size: 2rem;
+    }
+} 

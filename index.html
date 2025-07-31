@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Band Name - Official Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="hero">
+            <div class="hero-content">
+                <img src="logo.png" alt="PSYCLOP" class="band-logo">
+            </div>
+        </header>
+
+        <main class="main-content">
+            <section class="music-section">
+                <div class="download-section">
+                    <button id="downloadDemoBtn" class="download-demo-btn">
+                        Download Demo
+                    </button>
+                    <button id="playAllBtn" class="play-all-btn">
+                        Insane Mode
+                    </button>
+                </div>
+                <div class="music-player">
+                    <div class="player-controls">
+                        <div class="now-playing">
+                            <div class="track-info">
+                                <span class="track-title">Select a song to play</span>
+                                <span class="track-artist">Your Band Name</span>
+                            </div>
+                        </div>
+                        <div class="controls">
+                            <button id="playPauseBtn" class="control-btn">
+                                <i class="fas fa-play"></i>
+                            </button>
+                            <button id="prevBtn" class="control-btn">
+                                <i class="fas fa-step-backward"></i>
+                            </button>
+                            <button id="nextBtn" class="control-btn">
+                                <i class="fas fa-step-forward"></i>
+                            </button>
+                        </div>
+                        <div class="progress-container">
+                            <div class="progress-bar">
+                                <div class="progress-fill"></div>
+                            </div>
+                            <div class="time-display">
+                                <span class="current-time">0:00</span>
+                                <span class="total-time">0:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <div class="song-list" id="songList">
+                        <!-- Songs will be populated by JavaScript -->
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+    </div>
+
+    <audio id="audioPlayer" preload="metadata"></audio>
+    <script src="script.js"></script>
+</body>
+</html> 
