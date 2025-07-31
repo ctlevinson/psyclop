@@ -3,58 +3,58 @@ const songs = [
     {
         title: "Psyclop",
         artist: "Your Band Name",
-        duration: "4:15",
-        file: "songs/1 Psyclop.wav",
-        downloadUrl: "songs/1 Psyclop.wav"
+        duration: "1:42",
+        file: "songs/streaming/1 Psyclop.mp3",
+        downloadUrl: "songs/download/1 Psyclop.mp3"
     },
     {
-        title: "Snakes", 
+        title: "Snakes",
         artist: "Your Band Name",
-        duration: "5:20",
-        file: "songs/2 Snakes.wav",
-        downloadUrl: "songs/2 Snakes.wav"
+        duration: "2:08",
+        file: "songs/streaming/2 Snakes.mp3",
+        downloadUrl: "songs/download/2 Snakes.mp3"
     },
     {
         title: "Invertebrate",
-        artist: "Your Band Name", 
-        duration: "2:45",
-        file: "songs/3 Invertebrate.wav",
-        downloadUrl: "songs/3 Invertebrate.wav"
+        artist: "Your Band Name",
+        duration: "0:56",
+        file: "songs/streaming/3 Invertebrate.mp3",
+        downloadUrl: "songs/download/3 Invertebrate.mp3"
     },
     {
         title: "Demon's Grin",
         artist: "Your Band Name",
-        duration: "4:12",
-        file: "songs/4 Demon's Grin.wav",
-        downloadUrl: "songs/4 Demon's Grin.wav"
+        duration: "1:27",
+        file: "songs/streaming/4 Demon's Grin.mp3",
+        downloadUrl: "songs/download/4 Demon's Grin.mp3"
     },
     {
         title: "Another Dimension",
         artist: "Your Band Name",
-        duration: "3:30",
-        file: "songs/5 Another Dimension.wav",
-        downloadUrl: "songs/5 Another Dimension.wav"
+        duration: "1:04",
+        file: "songs/streaming/5 Another Dimension.mp3",
+        downloadUrl: "songs/download/5 Another Dimension.mp3"
     },
     {
         title: "Death Is",
         artist: "Your Band Name",
-        duration: "6:15",
-        file: "songs/6 Death Is.wav",
-        downloadUrl: "songs/6 Death Is.wav"
+        duration: "2:06",
+        file: "songs/streaming/6 Death Is.mp3",
+        downloadUrl: "songs/download/6 Death Is.mp3"
     },
     {
         title: "Spit",
         artist: "Your Band Name",
-        duration: "3:45",
-        file: "songs/7 Spit.wav",
-        downloadUrl: "songs/7 Spit.wav"
+        duration: "1:18",
+        file: "songs/streaming/7 Spit.mp3",
+        downloadUrl: "songs/download/7 Spit.mp3"
     },
     {
         title: "Society",
         artist: "Your Band Name",
-        duration: "7:20",
-        file: "songs/8 Society.wav",
-        downloadUrl: "songs/8 Society.wav"
+        duration: "2:24",
+        file: "songs/streaming/8 Society.mp3",
+        downloadUrl: "songs/download/8 Society.mp3"
     }
 ];
 
