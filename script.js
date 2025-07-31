@@ -307,11 +307,14 @@ async function downloadAllSongs() {
         // Create a zip file using JSZip
         const zip = new JSZip();
         
-        // Add each song to the zip
-        for (const song of songs) {
-            const response = await fetch(song.file);
+        // Add each song to the zip with formatted filename
+        for (let i = 0; i < songs.length; i++) {
+            const song = songs[i];
+            const response = await fetch(song.downloadUrl);
             const blob = await response.blob();
-            zip.file(`${song.title}.wav`, blob);
+            const trackNumber = i + 1;
+            const formattedFilename = `${trackNumber}. PSYCLOP - ${song.title}.mp3`;
+            zip.file(formattedFilename, blob);
         }
         
         // Generate the zip file
